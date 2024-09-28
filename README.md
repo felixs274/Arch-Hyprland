@@ -22,6 +22,8 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 
 ### Battery
 
+[UPower](https://upower.freedesktop.org/) for Battery Information
+
 [poweralertd](https://aur.archlinux.org/packages/poweralertd) for notifications 
 
 ### Systemd
