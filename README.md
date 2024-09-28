@@ -11,7 +11,7 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | Shell               | ZSH                                     |
 | File Manager        | Nemo & ranger                           |
 | Launcher            | wofi                                    |
-| Notification Daemon | Dunst                                   |
+| Notification Daemon | swaync                                  |
 | Info Bar            | waybar                                  |
 | Logout              | wlogout                                 |
 | System Info         | btop & fastfetch                        |
