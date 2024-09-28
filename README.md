@@ -17,3 +17,16 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | System Info         | btop & fastfetch                        |
 | Document Viewer     | zathura                                 |
 | Theme               | Catppuccin                              |
+
+### Battery
+
+[poweralertd](https://aur.archlinux.org/packages/poweralertd) for notifications 
+
+### Systemd
+
+edit /etc/systemd/[logind.conf](https://www.freedesktop.org/software/systemd/man/latest/logind.conf.html)
+
+```conf
+HandlePowerKey=ignore
+HandleLidSwitch=suspend
+```
