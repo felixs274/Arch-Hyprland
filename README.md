@@ -10,7 +10,7 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | Terminal            | Kitty                                   |
 | Shell               | ZSH                                     |
 | File Manager        | Nemo & ranger                           |
-| Launcher            | wofi                                    |
+| Launcher            | rofi                                    |
 | Notification Daemon | swaync                                  |
 | Info Bar            | waybar                                  |
 | Lockscreen          | hyprlock                                |
