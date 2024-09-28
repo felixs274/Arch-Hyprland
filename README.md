@@ -13,6 +13,7 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | Launcher            | wofi                                    |
 | Notification Daemon | swaync                                  |
 | Info Bar            | waybar                                  |
+| Lockscreen          | hyprlock                                |
 | Logout              | wlogout                                 |
 | System Info         | btop & fastfetch                        |
 | Document Viewer     | zathura                                 |
