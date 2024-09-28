@@ -15,6 +15,7 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | Info Bar            | waybar                                  |
 | Lockscreen          | hyprlock                                |
 | Logout              | wlogout                                 |
+| Screenshot Utility  | hyprshot                                |
 | System Info         | btop & fastfetch                        |
 | Document Viewer     | zathura                                 |
 | Theme               | Catppuccin                              |
