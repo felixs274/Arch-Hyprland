@@ -46,3 +46,35 @@ edit `/etc/systemd/[logind.conf](https://www.freedesktop.org/software/systemd/ma
 HandlePowerKey=ignore
 HandleLidSwitch=suspend
 ```
+
+## Network
+
+### Wireguard VPN
+
+Install Wireguard
+
+```bash
+sudo pacman -S wireguard-tools
+```
+
+Import a wireguard conf via nmcli`
+
+```bash
+nmcli connection import type wireguard file Home.conf
+```
+
+Disable autoconnect on startup
+
+```bash
+nmcli connection modify Home autoconnect no
+```
+
+Enable or disable the connection with
+
+```bash
+nmcli connection up Home
+```
+
+```bash
+nmcli connection down Home
+```
