@@ -49,6 +49,8 @@ HandleLidSwitch=suspend
 
 ## Network
 
+[nm-applet](https://archlinux.org/packages/extra/x86_64/network-manager-applet/) to control Network settings (wifi, vpn, ...)
+
 ### Wireguard VPN
 
 Install Wireguard
