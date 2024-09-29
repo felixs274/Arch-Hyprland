@@ -1,8 +1,6 @@
 # Arch-Hyprland
 Dotfiles and Documentation for Arch Linux with Hyprland
 
-## Programs
-
 | <!-- -->            | <!-- -->                                |
 |---------------------|-----------------------------------------|
 | Distro              | [EndeavourOS](https://endeavouros.com/) |
@@ -20,15 +18,29 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | Document Viewer     | zathura                                 |
 | Theme               | Catppuccin                              |
 
-### Battery
+## GTK
+
+[Catppuccin GTK Theme](https://www.gnome-look.org/p/1715554)
+
+`~/.config/gtk-3.0/setting.ini` and `~/.config/gtk-4.0/setting.ini`
+
+```conf
+[Settings]
+gtk-application-prefer-dark-theme = 1
+gtk-theme-name=Catppuccin-Dark
+gtk-icon-theme-name=kora
+gtk-font-name=JetBrains Mono 11
+```
+
+## Battery
 
 [UPower](https://upower.freedesktop.org/) for Battery Information
 
 [poweralertd](https://aur.archlinux.org/packages/poweralertd) for notifications 
 
-### Systemd
+## Systemd
 
-edit /etc/systemd/[logind.conf](https://www.freedesktop.org/software/systemd/man/latest/logind.conf.html)
+edit `/etc/systemd/[logind.conf](https://www.freedesktop.org/software/systemd/man/latest/logind.conf.html)`
 
 ```conf
 HandlePowerKey=ignore
