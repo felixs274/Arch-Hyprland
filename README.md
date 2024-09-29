@@ -40,7 +40,9 @@ gtk-font-name=JetBrains Mono 11
 
 ## Systemd
 
-edit `/etc/systemd/[logind.conf](https://www.freedesktop.org/software/systemd/man/latest/logind.conf.html)`
+[logind.conf](https://www.freedesktop.org/software/systemd/man/latest/logind.conf.html)
+
+edit `/etc/systemd/logind.conf`
 
 ```conf
 HandlePowerKey=ignore
