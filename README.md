@@ -80,3 +80,11 @@ nmcli connection up Home
 ```bash
 nmcli connection down Home
 ```
+
+Maybe you encounter this error
+
+> Failed to set DNS configuration: Could not activate remote peer 'org.freedesktop.resolve1': activation request failed: unknown unit
+
+```bash
+sudo systemctl enable --now systemd-resolved
+```
