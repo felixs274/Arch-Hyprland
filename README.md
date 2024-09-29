@@ -59,7 +59,7 @@ Install Wireguard
 sudo pacman -S wireguard-tools
 ```
 
-Import a wireguard conf via nmcli`
+Import a wireguard conf via `nmcli`
 
 ```bash
 nmcli connection import type wireguard file Home.conf
