@@ -17,6 +17,7 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | Screenshot Utility  | hyprshot                                |
 | System Info         | btop & fastfetch                        |
 | Document Viewer     | zathura                                 |
+| Bootloader          | Grub                                    |
 | Theme               | Catppuccin                              |
 
 ## GTK
@@ -103,3 +104,15 @@ sudo systemctl enable ly
 ```bash
 sudo systemctl start ly
 ```
+
+## Grub
+
+[Themes](https://github.com/vinceliuice/grub2-themes)
+
+Choose a [wallpaper](https://github.com/felixs274/Arch-Hyprland/tree/main/wallpaper) for the bootscreen and place it as `background.jpg` inside the repo.
+
+```bash
+sudo ./install.sh -t vimix -i white -s 4k
+```
+
+
