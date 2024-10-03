@@ -1,6 +1,6 @@
 # Arch-Hyprland
 
-<img src="https://github.com/felixs274/Arch-Hyprland/blob/main/icon.png?raw=true" width="350" alt="Icon">
+<img src="https://github.com/felixs274/Arch-Hyprland/blob/main/icon.png?raw=true" height="250" alt="Icon">
 
 Dotfiles and Documentation for Arch Linux with Hyprland
 
