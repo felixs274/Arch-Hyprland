@@ -13,6 +13,7 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | Info Bar            | waybar                                  |
 | Lockscreen          | hyprlock                                |
 | Logout              | wlogout                                 |
+| Display Manager     | ly                                      | 
 | Screenshot Utility  | hyprshot                                |
 | System Info         | btop & fastfetch                        |
 | Document Viewer     | zathura                                 |
@@ -89,4 +90,16 @@ Maybe you encounter this error
 
 ```bash
 sudo systemctl enable --now systemd-resolved
+```
+
+## Display Manager
+
+[ly](https://archlinux.org/packages/extra/x86_64/ly/)
+
+```bash
+sudo systemctl enable ly
+```
+
+```bash
+sudo systemctl start ly
 ```
