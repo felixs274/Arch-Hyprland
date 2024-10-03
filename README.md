@@ -115,4 +115,9 @@ Choose a [wallpaper](https://github.com/felixs274/Arch-Hyprland/tree/main/wallpa
 sudo ./install.sh -t vimix -i white -s 4k
 ```
 
+## Icons
+
+Download the [Kora](https://github.com/bikass/kora) Icon Pack and place it in `~/.icons/`.
+
+Rofi uses it!
 
