@@ -1,0 +1,193 @@
+{ 
+  "layer": "top",
+  "height": 32,
+  "spacing": 0,
+
+  // ================================================================
+
+  "modules-left": [
+    "cpu",
+    "custom/dot",
+    "memory",
+    "custom/dot",
+    "custom/temperature",
+    "custom/dot"
+  ],
+
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-right": [
+    "tray",
+    "custom/dot",
+    "battery",
+    "custom/dot",
+    "power-profiles-daemon",
+    "custom/dot",
+    "backlight",
+    "custom/dot",
+    "pulseaudio",
+    "custom/dot",
+    "network",
+    "custom/dot",
+    "custom/vpn",
+    "custom/dot",
+    "clock",
+    "custom/dot",
+    "custom/power"
+  ], 
+
+  // ================================================================
+
+  "mpris": {
+    "format": "{player_icon} {title}",
+    "format-paused": "{status_icon} {title}",
+    "player-icons": {
+      "default": "▶"
+    },
+    "status-icons": {
+      "paused": "⏸"
+    }
+  },
+
+  "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+          "activated": "",
+          "deactivated": ""
+      }
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "{profile}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "default": ""
+    },
+    "sort-by-number": true,
+    "title-len": 1
+  },
+
+  "tray": {
+    "icon-size": 20,
+    "spacing": 8,
+    "tooltip": false
+  },
+
+  "custom/dot": {
+    "format": "",
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%d.%m.%Y}",
+    "tooltip-format": "<tt><big>{calendar}</big></tt>"
+  },
+
+  "cpu": {
+    "format": "  {load:1.0f}%",
+    "interval": 2
+  },
+
+  "memory": {
+    "interval": 2,
+    "format": " {used:0.1f}G",
+    "format-alt": " {}%",
+    "max-length": 10,
+    "tooltip": false
+  },
+
+  "temperature": {
+    "thermal-zone": 0,
+    "critical-threshold": 80,
+    "format-critical": " {temperatureC}°C",
+    "format": " {temperatureC}°C",
+    "tooltip": false
+  },
+
+  "custom/temperature": {
+    "exec": "sensors | grep 'Package id 0' | awk '{print int($4)}'",
+    "interval": 5,
+    "format": " {}°C",
+    "tooltip": false
+  },
+
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "tooltip": false,
+    "format-icons": [""],
+    "on-scroll-up": "brightnessctl set 5%+",
+    "on-scroll-down": "brightnessctl set 5%-"
+  },
+
+  "network": {
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "",
+    "format-disconnected": "", //An empty format will hide the module.
+    "tooltip-format-wifi": "{ifname} - {essid} - {frequency}GHz - {ipaddr}/{cidr}",
+    "tooltip-format-ethernet": "{ifname} - {ipaddr}/{cidr}",
+    "tooltip-format-disconnected": "Disconnected"
+  },
+
+  "custom/vpn": {
+    "interval": 3,
+    "format": "{}",
+    "exec": "ip add show | grep -qF Home && echo  || echo ",
+    "max-length": "100",
+    "on-click": "nmcli connection up Home & notify-send 'Wireguard' 'VPN connection established  '",
+    "on-click-right": "nmcli connection down Home & notify-send 'Wireguard' 'VPN connection stopped  '",
+    "tooltip-format": "VPN"
+  },
+
+  "pulseaudio": {
+    "format": "{icon}  {volume}",
+    "tooltip": false,
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", ""]
+    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "systemctl --user restart pipewire"
+  },
+
+  "battery": {
+    "bat": "BAT0",
+    "interval": 10,
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "format": "{icon}  {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-icons": ["", "", "", ""],
+    "max-length": 25,
+    "tooltip-format": "{time}\n{power:0.1f} W\n{cycles} Cycles\n{health}% Health"},
+
+  "custom/power": {
+    "format": "",
+    "rotate": 0,
+    "on-click": "wlogout -b 2",
+    "tooltip": false
+  },
+
+  "custom/separator": {
+    "format": " ",
+    "tooltip": false
+  }
+
+}
