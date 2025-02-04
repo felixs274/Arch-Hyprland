@@ -22,9 +22,10 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | Document Viewer     | zathura                                 |
 | Bootloader          | Grub                                    |
 | Theme               | Catppuccin                              |
+| Wallpaper           | waypaper & swww                         |
 
 ```
-yay -S hyprland ranger rofi swaync waybar wlogout hyprshot btop fastfetch
+yay -S hyprland ranger rofi swaync waybar wlogout hyprshot btop fastfetch waypaper
 ```
 
 ## GTK
