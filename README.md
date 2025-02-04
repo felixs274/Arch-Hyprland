@@ -24,8 +24,21 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | Theme               | Catppuccin                              |
 | Wallpaper           | waypaper & swww                         |
 
+### Installation
+
+Fonts
+```bash
+sudo pacman -S ttf-font-awesome nerd-fonts
 ```
-yay -S hyprland ranger rofi swaync waybar wlogout hyprshot btop fastfetch waypaper
+
+Hyprland Stuff
+```
+yay -S hyprland rofi swaync waybar wlogout hyprshot waypaper
+```
+
+Others
+```
+yay -S ranger btop fastfetch
 ```
 
 ## GTK
