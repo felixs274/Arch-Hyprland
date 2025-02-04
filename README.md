@@ -23,6 +23,10 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | Bootloader          | Grub                                    |
 | Theme               | Catppuccin                              |
 
+```
+yay -S hyprland ranger rofi swaync waybar wlogout hyprshot btop fastfetch
+```
+
 ## GTK
 
 [Catppuccin GTK Theme](https://www.gnome-look.org/p/1715554)
