@@ -33,7 +33,7 @@ sudo pacman -S ttf-font-awesome nerd-fonts
 
 Hyprland Stuff
 ```
-yay -S hyprland rofi swaync waybar wlogout hyprshot waypaper
+yay -S hyprland rofi swaync waybar wlogout hyprshot waypaper swww
 ```
 
 Others
