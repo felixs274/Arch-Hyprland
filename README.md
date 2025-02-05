@@ -36,9 +36,14 @@ Hyprland Stuff
 yay -S hyprland rofi swaync waybar wlogout hyprlock hyprshot waypaper swww hyprpolkitagent
 ```
 
-Others
+System
 ```
 yay -S ranger btop fastfetch
+```
+
+Applications
+```
+yay -S ripperx gimp dbeaver libreoffice-still
 ```
 
 ## GTK
