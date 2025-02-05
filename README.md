@@ -42,7 +42,7 @@ yay -S zsh ranger btop fastfetch gnome-disk-utility
 
 Applications
 ```
-yay -S ripperx gimp dbeaver libreoffice-still
+yay -S ripperx gimp dbeaver libreoffice-still typst
 ```
 
 ## GTK
