@@ -37,7 +37,7 @@ yay -S hyprland rofi swaync waybar wlogout hyprlock hyprshot waypaper swww hyprp
 
 System
 ```
-yay -S ranger btop fastfetch gnome-disk-utility 
+yay -S zsh ranger btop fastfetch gnome-disk-utility 
 ```
 
 Applications
