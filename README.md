@@ -19,7 +19,6 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | Display Manager     | ly                                      | 
 | Screenshot Utility  | hyprshot                                |
 | System Info         | btop & fastfetch                        |
-| Document Viewer     | zathura                                 |
 | Bootloader          | Grub                                    |
 | Theme               | Catppuccin                              |
 | Wallpaper           | waypaper & swww                         |
@@ -38,7 +37,7 @@ yay -S hyprland rofi swaync waybar wlogout hyprlock hyprshot waypaper swww hyprp
 
 System
 ```
-yay -S ranger btop fastfetch
+yay -S ranger btop fastfetch gnome-disk-utility 
 ```
 
 Applications
