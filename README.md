@@ -7,7 +7,7 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | <!-- -->            | <!-- -->                                |
 |---------------------|-----------------------------------------|
 | Distro              | Arch                                    |
-| Window Manager      | [Hyprland](https://hyprland.org/)       |
+| Window Manager      | Hyprland                                |
 | Terminal            | Kitty                                   |
 | Shell               | ZSH                                     |
 | File Manager        | Nemo & ranger                           |
@@ -25,9 +25,10 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 
 ### Installation
 
-Fonts
-```bash
-sudo pacman -S ttf-font-awesome nerd-fonts
+
+System
+```
+yay -S zsh ranger btop fastfetch gnome-disk-utility power-profiles-daemon
 ```
 
 Hyprland Stuff
@@ -35,9 +36,9 @@ Hyprland Stuff
 yay -S hyprland rofi swaync waybar wlogout hyprlock hyprshot waypaper swww hyprpolkitagent
 ```
 
-System
-```
-yay -S zsh ranger btop fastfetch gnome-disk-utility 
+Fonts
+```bash
+sudo pacman -S ttf-font-awesome nerd-fonts
 ```
 
 Applications
