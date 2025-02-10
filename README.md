@@ -28,12 +28,12 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 
 System
 ```
-yay -S zsh ranger btop fastfetch gnome-disk-utility power-profiles-daemon
+yay -S zsh ranger nemo btop fastfetch gnome-disk-utility power-profiles-daemon
 ```
 
 Hyprland Stuff
 ```
-yay -S hyprland rofi swaync waybar wlogout hyprlock hyprshot waypaper swww hyprpolkitagent
+yay -S hyprland kitty rofi swaync waybar wlogout hyprlock hyprshot waypaper swww poweralertd hyprpolkitagent
 ```
 
 Fonts
