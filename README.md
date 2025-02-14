@@ -22,6 +22,7 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | Bootloader          | Grub                                    |
 | Theme               | Catppuccin                              |
 | Wallpaper           | waypaper & swww                         |
+| GTK Theme select    | nwg-look                                |
 
 ### Installation
 
@@ -33,7 +34,7 @@ yay -S zsh ranger nemo btop fastfetch gnome-disk-utility power-profiles-daemon
 
 Hyprland Stuff
 ```
-yay -S hyprland kitty rofi swaync waybar wlogout hyprlock hyprshot waypaper swww poweralertd hyprpolkitagent
+yay -S hyprland kitty rofi swaync waybar wlogout hyprlock hyprshot waypaper swww poweralertd hyprpolkitagent nwg-look
 ```
 
 Fonts
@@ -48,16 +49,32 @@ yay -S ripperx gimp dbeaver libreoffice-still typst
 
 ## GTK
 
-[Catppuccin GTK Theme](https://www.gnome-look.org/p/1715554)
+[Catppuccin GTK Theme](https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme)
 
-`~/.config/gtk-3.0/setting.ini` and `~/.config/gtk-4.0/setting.ini`
+```bash
+git clone https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme
+```
+
+```bash
+cd Catppuccin-GTK-Theme/themes
+```
+
+```bash
+./install.sh
+```
+
+
+## Systemd
+
+[logind.conf](https://www.freedesktop.org/software/systemd/man/latest/logind.conf.html)
+
+```bash
+sudo nano /etc/systemd/logind.conf
+```
 
 ```conf
-[Settings]
-gtk-application-prefer-dark-theme = 1
-gtk-theme-name=Catppuccin-Dark
-gtk-icon-theme-name=kora
-gtk-font-name=JetBrains Mono 11
+HandlePowerKey=ignore
+HandleLidSwitch=suspend
 ```
 
 ## Battery
@@ -66,16 +83,6 @@ gtk-font-name=JetBrains Mono 11
 
 [poweralertd](https://aur.archlinux.org/packages/poweralertd) for notifications 
 
-## Systemd
-
-[logind.conf](https://www.freedesktop.org/software/systemd/man/latest/logind.conf.html)
-
-edit `/etc/systemd/logind.conf`
-
-```conf
-HandlePowerKey=ignore
-HandleLidSwitch=suspend
-```
 
 ## Network
 
