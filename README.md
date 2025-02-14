@@ -10,7 +10,7 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 | Window Manager      | Hyprland                                |
 | Terminal            | Kitty                                   |
 | Shell               | ZSH                                     |
-| File Manager        | Nemo & ranger                           |
+| File Manager        | Various                                 |
 | Launcher            | rofi                                    |
 | Notification Daemon | swaync                                  |
 | Info Bar            | waybar                                  |
@@ -34,7 +34,7 @@ yay -S zsh ranger nemo btop fastfetch gnome-disk-utility power-profiles-daemon
 
 Hyprland Stuff
 ```
-yay -S hyprland kitty rofi swaync waybar wlogout hyprlock hyprshot waypaper swww poweralertd hyprpolkitagent nwg-look
+yay -S hyprland kitty rofi swaync waybar wlogout hyprlock hyprshot waypaper swww poweralertd hyprpolkitagent gnome-shell nwg-look
 ```
 
 Fonts
@@ -52,6 +52,10 @@ yay -S ripperx gimp dbeaver libreoffice-still typst
 [Catppuccin GTK Theme](https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme)
 
 ```bash
+sudo pacman -S gnome-shell
+```
+
+```bash
 git clone https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme
 ```
 
@@ -62,6 +66,13 @@ cd Catppuccin-GTK-Theme/themes
 ```bash
 ./install.sh
 ```
+
+## File Managers
+
+```bash
+sudo pacman -S nemo thunar pcmanfm-gtk3 nautilus ranger yazi
+```
+
 
 
 ## Systemd
