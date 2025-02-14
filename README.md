@@ -73,8 +73,15 @@ cd Catppuccin-GTK-Theme/themes
 sudo pacman -S nemo thunar pcmanfm-gtk3 nautilus ranger yazi
 ```
 
-For Nautilus
+### For Nautilus
+
+Disable Recent
 ```bash
+gsettings set org.gnome.desktop.privacy remember-recent-files false
+```
+
+In `hyprland.conf`
+```conf
 nautilus --new-window
 ```
 
