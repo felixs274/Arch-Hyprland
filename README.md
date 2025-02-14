@@ -73,6 +73,10 @@ cd Catppuccin-GTK-Theme/themes
 sudo pacman -S nemo thunar pcmanfm-gtk3 nautilus ranger yazi
 ```
 
+For Nautilus
+```bash
+nautilus --new-window
+```
 
 
 ## Systemd
