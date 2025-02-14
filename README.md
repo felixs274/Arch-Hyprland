@@ -6,7 +6,7 @@ Dotfiles and Documentation for Arch Linux with Hyprland
 
 | <!-- -->            | <!-- -->                                |
 |---------------------|-----------------------------------------|
-| Distro              | Arch                                    |
+| Distro              | EndeavourOS                             |
 | Window Manager      | Hyprland                                |
 | Terminal            | Kitty                                   |
 | Shell               | ZSH                                     |
