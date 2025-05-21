@@ -11,7 +11,8 @@
     "memory",
     "custom/dot",
     "custom/temperature",
-    "custom/dot"
+    "custom/dot",
+    "disk"
   ],
 
   "modules-center": [
@@ -30,8 +31,6 @@
     "pulseaudio",
     "custom/dot",
     "network",
-    "custom/dot",
-    "custom/vpn",
     "custom/dot",
     "clock",
     "custom/dot",
@@ -66,7 +65,7 @@
     "format-icons": {
       "default": "",
       "performance": "",
-      "balanced": "",
+      "balanced": "",
       "power-saver": ""
     }
   },
@@ -119,6 +118,13 @@
     "tooltip": false
   },
 
+  "disk": {
+    "interval": 30,
+    "format-alt": "  {percentage_used}%",
+    "format": "  {used}",
+    "tooltip-format": "{used} ({percentage_used}%) / {total}"
+  },
+
   "custom/temperature": {
     "exec": "sensors | grep 'Package id 0' | awk '{print int($4)}'",
     "interval": 5,
@@ -136,7 +142,7 @@
   },
 
   "network": {
-    "format-wifi": "  {signalStrength}%",
+    "format-wifi": "   {signalStrength}%",
     "format-ethernet": "",
     "format-disconnected": "", //An empty format will hide the module.
     "tooltip-format-wifi": "{ifname} - {essid} - {frequency}GHz - {ipaddr}/{cidr}",
