@@ -1,130 +1,164 @@
-@import "./catppuccin-mocha.css";
+@import "./gruvbox-dark.css";
 
 * {
     border: none;
-    font-size: 14px;
-    font-family: "JetBrainsMono ExtraBold";
+    font-size: 13px;
+    font-family: "JetBrainsMono NF";
 }
 
 window#waybar {
-    background-color: @crust;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    box-shadow: none;
+}
+
+
+/* === Shared Module Style === */
+#cpu,
+#memory,
+#disk,
+#custom-temperature,
+#temperature,
+#custom-dot,
+#mpris,
+#workspaces,
+#tray,
+#battery,
+#power-profiles-daemon,
+#custom-notification,
+#backlight,
+#pulseaudio,
+#network,
+#custom-vpn,
+#clock,
+#custom-power {
+    background-color: @bg;
+    margin-top: 6px;
+    padding: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+/* === Costum Seperator & Dots === */
+#custom-sep {
+    background-color: transparent;
+    padding: 6px;
 }
 
 #custom-dot {
-    color: @overlay0;
-    padding-right: 4px;
-    padding-left: 4px;
+    background-color: @bg;
+    color: @gray-dim;
     font-size: 7px;
 }
 
-/* L E F T ============================= */
 
-#cpu {
-    color: @blue;
-    padding-right: 8px;
-    padding-left: 20px;
+/* === Left Modules === */
+#custom-power { 
+    color: @red-dim; 
+    margin-left: 7px;
+    border-radius: 10px 0 0 10px; /* top-left, top-right, bottom-right, bottom-left */
+    padding-left: 10px;
 }
 
-#memory {
-    color: @yellow;
-    padding-right: 8px;
-    padding-left: 8px;
+#power-profiles-daemon { color: @fg2; }
+
+#battery { 
+    color: @fg2; 
+    border-radius: 0 10px 10px 0; /* top-left, top-right, bottom-right, bottom-left */
+    padding-right: 10px;
 }
 
-#disk {
-    color: @green;
-    padding-right: 8px;
-    padding-left: 8px;
+#tray {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-#custom-temperature,
-#temperature {
-    color: @red;
-    padding-right: 8px;
-    padding-left: 8px;
+
+/* === Right Modules === */
+#cpu { 
+    color: @fg2; 
+    border-radius: 10px 0 0 10px; /* top-left, top-right, bottom-right, bottom-left */
+    padding-left: 10px;
 }
 
-#mpris {
-    color: @green;
-    padding-right: 8px;
-    padding-left: 8px;
+#memory { 
+    color: @fg2; 
 }
 
-/* W O R K S P A C E S */
+#custom-temperature { 
+    color: @fg2; 
+}
+
+#temperature { 
+    color: @fg2; 
+}
+
+#disk { 
+    color: @fg2; 
+}
+
+#backlight { 
+    color: @fg2; 
+}
+
+#pulseaudio { 
+    color: @fg2; 
+}
+
+#network { 
+    color: @fg2; 
+    border-radius: 0 10px 10px 0; /* top-left, top-right, bottom-right, bottom-left */
+    padding-right: 10px;
+}
+
+#custom-notification {
+    color: @fg2;
+    border-radius: 10px 0 0 10px; /* top-left, top-right, bottom-right, bottom-left */
+    padding-left: 10px;
+}
+
+#clock {
+    color: @fg2;
+    border-radius: 0 10px 10px 0; /* top-left, top-right, bottom-right, bottom-left */
+    padding-right: 10px;
+    margin-right: 7px;
+}
+
+
+
+/* === Workspace Modules === */
+#workspaces {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 #workspaces label {
-    font-size: 7px;
+    background-color: @bg;
+    font-size: 13px;
 }
 
 #workspaces label:hover {
-    background-color: @crust;
-    color: @text;
+    background-color: rgba(0, 0, 0, 0);
+    color: @fg2;
 }
 
 #workspaces button {
     padding: 5px;
-    background-color: @crust;
-    color: @surface0;
+    background-color: rgba(0, 0, 0, 0);
+    color: @bg2;
 }
 
 #workspaces button.active {
-    background-color: @crust;
-    color: @text;
+    background-color: rgba(0, 0, 0, 0);
+    color: @fg2;
 }
 
 #workspaces button:hover {
     box-shadow: none;
     text-shadow: none;
-    background: none;
     transition: none;
 }
 
-/* R I G H T ============================= */
-
-#battery {
-    color: @blue;
-    padding-right: 8px;
-    padding-left: 8px;
-}
-
-#power-profiles-daemon {
-    color: @sky;
-    padding-right: 8px;
-    padding-left: 8px;
-}
-
-#backlight {
-    color: @rosewater;
-    padding-right: 8px;
-    padding-left: 10px;
-}
-
-#pulseaudio {
-    color: @green;
-    padding-right: 8px;
-    padding-left: 8px;
-}
-
-#network {
-    color: @lavender;
-    padding-right: 8px;
-    padding-left: 7px;
-}
-
-#custom-vpn {
-    color: @maroon;
-    padding-right: 8px;
-    padding-left: 7px;
-}
-
-#clock {
-    color: @peach;
-    padding-right: 8px;
-    padding-left: 8px;
-}
-
-#custom-power {
-    color: @red;
-    padding-right: 20px;
-    padding-left: 8px;
-}

@@ -6,57 +6,46 @@
   // ================================================================
 
   "modules-left": [
+    "custom/power",
+    "custom/dot",
+    "power-profiles-daemon",
+    "custom/dot",
+    "battery",
+
+    "custom/sep",
+
+    "hyprland/workspaces",
+
+    "custom/sep",
+
+    "tray"
+  ],
+
+
+
+  "modules-right": [
     "cpu",
     "custom/dot",
     "memory",
     "custom/dot",
     "custom/temperature",
     "custom/dot",
-    "disk"
-  ],
-
-  "modules-center": [
-    "hyprland/workspaces"
-  ],
-
-  "modules-right": [
-    "tray",
-    "custom/dot",
-    "battery",
-    "custom/dot",
-    "power-profiles-daemon",
+    "disk",
     "custom/dot",
     "backlight",
     "custom/dot",
     "pulseaudio",
     "custom/dot",
     "network",
+
+    "custom/sep",
+
+    "custom/notification",
     "custom/dot",
-    "clock",
-    "custom/dot",
-    "custom/power"
+    "clock"
   ], 
 
   // ================================================================
-
-  "mpris": {
-    "format": "{player_icon} {title}",
-    "format-paused": "{status_icon} {title}",
-    "player-icons": {
-      "default": "▶"
-    },
-    "status-icons": {
-      "paused": "⏸"
-    }
-  },
-
-  "idle_inhibitor": {
-      "format": "{icon}",
-      "format-icons": {
-          "activated": "",
-          "deactivated": ""
-      }
-  },
 
   "power-profiles-daemon": {
     "format": "{icon}",
@@ -65,17 +54,13 @@
     "format-icons": {
       "default": "",
       "performance": "",
-      "balanced": "",
+      "balanced": "",
       "power-saver": ""
     }
   },
 
   "hyprland/workspaces": {
     "format": "{icon}",
-    "format-icons": {
-      "active": "",
-      "default": ""
-    },
     "sort-by-number": true,
     "title-len": 1
   },
@@ -91,6 +76,11 @@
     "tooltip": false
   },
 
+  "custom/sep": {
+    "format": "‎",
+    "tooltip": false
+  },
+
   "clock": {
     "format": "{:%H:%M}",
     "format-alt": "{:%d.%m.%Y}",
@@ -98,7 +88,7 @@
   },
 
   "cpu": {
-    "format": "  {load:1.0f}%",
+    "format": " {load:1.0f}%",
     "interval": 2
   },
 
@@ -120,8 +110,8 @@
 
   "disk": {
     "interval": 30,
-    "format-alt": "  {percentage_used}%",
-    "format": "  {used}",
+    "format-alt": " {percentage_used}%",
+    "format": " {used}",
     "tooltip-format": "{used} ({percentage_used}%) / {total}"
   },
 
@@ -142,7 +132,7 @@
   },
 
   "network": {
-    "format-wifi": "   {signalStrength}%",
+    "format-wifi": " {signalStrength}%",
     "format-ethernet": "",
     "format-disconnected": "", //An empty format will hide the module.
     "tooltip-format-wifi": "{ifname} - {essid} - {frequency}GHz - {ipaddr}/{cidr}",
@@ -161,7 +151,7 @@
   },
 
   "pulseaudio": {
-    "format": "{icon}  {volume}",
+    "format": "{icon} {volume}",
     "tooltip": false,
     "format-muted": "",
     "format-icons": {
@@ -171,6 +161,27 @@
     "on-click-right": "systemctl --user restart pipewire"
   },
 
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+
   "battery": {
     "bat": "BAT0",
     "interval": 10,
@@ -178,7 +189,7 @@
       "warning": 20,
       "critical": 10
     },
-    "format": "{icon}  {capacity}%",
+    "format": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
     "format-icons": ["", "", "", ""],
     "max-length": 25,
@@ -188,11 +199,6 @@
     "format": "",
     "rotate": 0,
     "on-click": "wlogout -b 2",
-    "tooltip": false
-  },
-
-  "custom/separator": {
-    "format": " ",
     "tooltip": false
   }
 
