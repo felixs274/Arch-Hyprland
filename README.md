@@ -1,48 +1,20 @@
 # Arch-Hyprland
 
-<img src="https://github.com/felixs274/Arch-Hyprland/blob/main/icon.png?raw=true" height="250" alt="Icon">
-
-Dotfiles and Documentation for Arch Linux with Hyprland
-
-| <!-- -->            | <!-- -->                                |
-|---------------------|-----------------------------------------|
-| Distro              | EndeavourOS                             |
-| Window Manager      | Hyprland                                |
-| Terminal            | Kitty                                   |
-| Shell               | ZSH                                     |
-| File Manager        | Various                                 |
-| Launcher            | rofi                                    |
-| Notification Daemon | swaync                                  |
-| Info Bar            | waybar                                  |
-| Lockscreen          | hyprlock                                |
-| Logout              | wlogout                                 |
-| Display Manager     | ly                                      | 
-| Screenshot Utility  | hyprshot                                |
-| System Info         | btop & fastfetch                        |
-| Bootloader          | Grub                                    |
-| Theme               | Catppuccin                              |
-| Wallpaper           | waypaper & swww                         |
-| GTK Theme select    | nwg-look                                |
+## Catppuccin Branch
 
 ### Installation
 
+Essentials
+```
+yay -S hyprland kitty rofi swaync waybar wlogout hyprlock hyprshot waypaper swww poweralertd hyprpolkitagent nwg-look brightnessctl power-profiles-daemon zsh ttf-font-awesome nerd-fonts
+```
 
 System
 ```
-yay -S zsh ranger nemo btop fastfetch gnome-disk-utility power-profiles-daemon
+yay -S btop fastfetch gnome-disk-utility 
 ```
 
-Hyprland Stuff
-```
-yay -S hyprland kitty rofi swaync waybar wlogout hyprlock hyprshot waypaper swww poweralertd hyprpolkitagent gnome-shell nwg-look
-```
-
-Fonts
-```bash
-sudo pacman -S ttf-font-awesome nerd-fonts
-```
-
-Applications
+Optional
 ```
 yay -S ripperx gimp dbeaver libreoffice-still typst
 ```
