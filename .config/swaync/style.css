@@ -1,7 +1,7 @@
 * {
   all: unset;
   font-size: 14px;
-  font-family: "Ubuntu Nerd Font";
+  font-family: "JetBrainsMono NF";
   transition: 200ms;
 }
 
@@ -213,12 +213,12 @@ progressbar {
 }
 
 .notification.critical progress {
-  background-color: #cc241d;
+  background-color: #fb4934;
 }
 
 .notification.low progress,
 .notification.normal progress {
-  background-color: #458588;
+  background-color: #a89984;
 }
 
 trough {
