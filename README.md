@@ -4,6 +4,8 @@
 
 -> [ErikReider/SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)
 
+-> [iruzo/gruvbox-swaync](https://github.com/iruzo/gruvbox-swaync)
+
 ## Rofi 
 
 -> [Murzchnvok/rofi-collection](https://github.com/Murzchnvok/rofi-collection)
