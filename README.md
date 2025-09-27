@@ -3,7 +3,7 @@
 ## Programs
 
 ```bash
-yay -S hyprland kitty swaync rofi waybar wlogout hyprlock ly hyprshot waypaper swww poweralertd hyprpolkitagent nwg-look brightnessctl power-profiles-daemon ttf-font-awesome otf-font-awesome nerd-fonts zsh btop fastfetch gnome-disk-utility
+yay -S hyprland kitty swaync rofi waybar wlogout hyprlock ly hyprshot waypaper swww poweralertd hyprpolkitagent nwg-look nwg-displays brightnessctl power-profiles-daemon ttf-font-awesome otf-font-awesome nerd-fonts zsh btop fastfetch gnome-disk-utility eog okular
 ```
 
 ## SwayNC & Notification Center
