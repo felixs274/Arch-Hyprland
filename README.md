@@ -2,16 +2,8 @@
 
 ## Programs
 
-### Essentials
-
 ```bash
-yay -S hyprland kitty swaync rofi waybar wlogout hyprlock ly hyprshot waypaper swww poweralertd hyprpolkitagent nwg-look gnome-shell brightnessctl power-profiles-daemon ttf-font-awesome nerd-fonts
-```
-
-### System
-
-```bash
-yay -S zsh btop fastfetch gnome-disk-utility
+yay -S hyprland kitty swaync rofi waybar wlogout hyprlock ly hyprshot waypaper swww poweralertd hyprpolkitagent nwg-look brightnessctl power-profiles-daemon ttf-font-awesome otf-font-awesome nerd-fonts zsh btop fastfetch gnome-disk-utility
 ```
 
 ## SwayNC & Notification Center
