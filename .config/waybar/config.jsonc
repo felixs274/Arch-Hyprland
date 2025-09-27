@@ -1,4 +1,5 @@
 { 
+  "reload_style_on_change": true,
   "layer": "top",
   "height": 32,
   "spacing": 0,
@@ -30,7 +31,6 @@
 
     "custom/sep",
 
-    "custom/notification",
     "clock"
   ], 
 
@@ -50,7 +50,7 @@
     "format-icons": {
       "default": "",
       "performance": "",
-      "balanced": "",
+      "balanced": "",
       "power-saver": ""
     }
   },
